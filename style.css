@@ -1,0 +1,186 @@
+/* General reset for better cross-browser compatibility */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f8f8f8;
+}
+
+h1, h2,h3 {
+    margin: 10px 0;
+    color: #003366;
+}
+.center-text{
+    text-align: center;
+    font-family: Arial, sans-serif; 
+    margin-bottom: 10px;
+}
+
+h5 {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Center the entire content */
+form {
+    width: 70%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Align labels and inputs properly */
+label {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    vertical-align: top;
+}
+.left-align{
+display: flex;
+align-items: center;
+}
+.left-align label,.left-align{
+    margin-right:50px;  
+}
+.radio-group {
+    margin-left:5px; 
+}
+.period{
+    display: flex;
+    align-items: center;;
+}
+
+
+
+input, select, textarea {
+    width: calc(100% - 160px);
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Sectioning the form */
+#leaveForm {
+    margin-bottom: 30px;
+}
+
+/* Styling the table */
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid #000;
+}
+
+th, td {
+    padding: 10px;
+}
+
+/* Aligning radio buttons */
+input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Making the submit button styled */
+button[type="submit"] {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: block;
+    margin: 20px auto;
+}
+
+button[type="submit"]:hover {
+    background-color: #0059b3;
+}
+
+/* Note section */
+h3, h5 {
+    text-align: left;
+    margin-top: 20px;
+}
+
+h5 {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+    color: green;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+    }
+
+    label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    input, select, textarea {
+        width: 100%;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+}
+
+/* General form styling */
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Align the "For the period" label and date inputs horizontally */
+.form-group label {
+    width: 150px; /* Adjust this for label width */
+    margin-right: 5px; /* Adds space between the label and input fields */
+    text-align: right; /* Align the label text to the right */
+}
+
+/* Flexbox for date range section to arrange "On/From" and "To" */
+.date-range {
+    display: flex;
+    gap: 3px; /* Adds space between the "On/From" and "To" inputs */
+}
+
+/* Input fields for the dates */
+input[type="date"] {
+    width: 150px; /* Adjust input width as needed */
+    padding: 5px;
+}
+
+/* Optional: Adjust styling of individual labels inside the date range */
+.date-range label {
+    margin-right: 3px; /* Space between labels like "On/From" and the inputs */
+}
