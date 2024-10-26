@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OD and Leave Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   <center><img src="c:\Users\HP\Downloads\jit-logo.png" width="80" height="80"</center>
+   <h1 >JANSONS INSTITUTE OF TECHNOLOGY</h1>
+ <h3 class="center-text">(Autonomous)</h3>
+  <h5 class="center-text">Accredited by NAAC A Grade and 150 0001: 2015 Certified Institution <br>Approved by AICTE and Afflated to Anna University<br>Coimbatore-641 659, Tamil Nadu, India</h5>
+ <center><h2>STUDENT LEAVE/ON DUTY APPLICATION FOR INDIVIDUAL</h2></center>
+    <form id="leaveForm">
+        <div class="left-align">
+     <label for="Nature" class="left-text">Nature:</label>
+     <div class="radio-group">
+     <input type="radio" id="OD" name="OD" value="OD" required>
+     <label for="OD">OD</label></div>
+     <div class="radio">
+     <input type="radio" id="Leave" name="Leave" value="Leave" required>
+  <label for="Leave">Leave</label></div></div><br>
+        <label for="Student Name">Student Name:</label>
+        <input type="text" id="Student Name"Student Name="Student Name"required><br>
+        <label for="Department">Department:</label>
+        <input type="text" id="Department" Department="Department"required><br>
+        <div class="form-group">
+            <label for="period">For the Period:</label>
+            <div class="date-range">
+                <label for="startDate">On/From:</label>
+                <input type="date" id="startDate" name="startDate" required>
+                <label for="endDate">To:</label>
+                <input type="date" id="endDate" name="endDate" required>
+            </div>
+        </div>
+        
+        <label for="Purpose">Reason for Leave:</label>
+        <textarea id="Purpose" name="Purpose" required></textarea><br>
+        <label for="type">Type of Leave:</label>
+        <select id="type" name="type">
+            <option value="sick">Sick Leave</option><br>
+            <option value="vacation">Vacation</option>
+            <option value="other">Other</option>
+        </select>
+        <form><br>
+            <label for="date">Date:</label>
+            <input type="date" id="Date" date="date"required><br>
+            <label for="preapproved">Preapproved:</label>
+  <input type="radio" id="yes" name="preapproved" value="yes" required>
+  <label for="yes">Yes</label>
+  <input type="radio" id="no" name="preapproved" value="no" required>
+  <label for="no">No</label><br><br>
+            <label for="Register No">Register No:</label>
+            <input type="Register No" id="Register No" Register No="Register No"required><br>
+            <label for="Year&Section">Year&Section:</label>
+            <input type="Year&Section" id="Year&Section" Year&Section="Year&Section"required><br>
+            <label for="No of days">No of days:</label>
+            <input type="No of days" id="No of days"No of days="No of days"required><br>
+            <label for="Prior communication has been intimated to (if not pre-approved)">Prior communication has been intimated to (if not pre-approved): </label>
+            <input type="Prior communication has been intimated to (if not pre-approved)" id="Prior communication has been intimated to (if not pre-approved)"Prior communication has been intimated to (if not pre-approved)="Prior communication has been intimated to (if not pre-approved)"required><br>
+            <label for="Prior information from the parent / Details of feedback to Parent">Prior information from the parent / Details of feedback to Parent:</label>
+            <input type="Prior information from the parent / Details of feedback to Parent" id="Prior information from the parent / Details of feedback to Parent"Prior information from the parent / Details of feedback to Parent="Prior information from the parent / Details of feedback to Parent"required>
+        </form>
+<table border="1">
+        <tr>
+            <th>Details of previous leave and OD</th>
+        </tr>
+        <tr>
+            <td >Leave</td>
+            <td >OD</td>
+            <td >Total</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+
+        </tr>
+</table>
+
+  <input type="radio" id="Leave Sanctioned" name="Leave Sanctioned" value="Leave Sanctioned" required>
+  <label for="Leave Sanctioned">Leave Sanctioned</label>
+  <input type="radio" id="Not Sanctioned" name="Not Sanctioned" value="Not Sanctioned" required>
+  <label for="Not Sanctioned">Not Sanctioned</label><br><br>
+<label for="faculty coordinator(for OD)">faculty coordinator(for OD)</label><br>
+<input type="radio" id="Approved" name="Approved" value="Approved" required>
+<label for="Approved">Approved</label>
+<input type="radio" id=" Not Approved" name="Not Approved" value="Not Approved" required>
+<label for="Not Approved">Not Approved</label> <br>
+<label for="Mentor">Mentor</label><br>
+<input type="radio" id="Approved" name="Approved" value="Approved" required>
+<label for="Approved">Approved</label>
+<input type="radio" id=" Not Approved" name="Not Approved" value="Not Approved" required>
+<label for="Not Approved">Not Approved</label><br>
+<label for="HOD">HOD</label><br>
+<input type="radio" id="Approved" name="Approved" value="Approved" required>
+<label for="Approved">Approved</label>
+<input type="radio" id=" Not Approved" name="Not Approved" value="Not Approved" required>
+<label for="Not Approved">Not Approved</label><br>
+<h3>Note:</h3>
+<h5>1. For Medical leave for more than 3 days, medical certificate to be submitted.<br>
+    2. In absence of mentor, class advisor or other mentor can be contacted for leave approval</h5>
+        <button type="submit">Submit</button>
+    </form>
+
+    
+</body>
+</html>
